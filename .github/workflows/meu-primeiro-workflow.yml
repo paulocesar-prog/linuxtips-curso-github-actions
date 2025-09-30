@@ -12,8 +12,8 @@ jobs:
       - name: Confere versao do ubuntu
         run: cat /etc/os-release
 
-        -name: Exibisr uma mensagem
-         run: echo "Estou fazendo o curso de Github Actions da Linuxtips"
+      - name: Exibibir uma mensagem
+        run: echo "Estou fazendo o curso de Github Actions da Linuxtips"
 
 
   
