@@ -21,8 +21,8 @@ jobs:
       - name: Docker Scout
         uses: docker/scout-action@v1
         with:
-            name: ${{github.event.inputs.imagemdocker}}
-            command: cves
+            name: Analise de vulnerabilidade
+            command: ${{github.event.inputs.imagemdocker}} cves
     
 
 
