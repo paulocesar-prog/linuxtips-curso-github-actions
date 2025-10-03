@@ -16,9 +16,10 @@ jobs:
         run: docker pull ${{github.event.inputs.imagemdocker}}
 
       - name: Exibibir a imagem do pull
-        run: docker ps
+        run: docker image ls
 
 
 
   
+
 
