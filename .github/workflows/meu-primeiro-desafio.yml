@@ -24,7 +24,7 @@ jobs:
             name: Analise de vulnerabilidade
             dockerhub-user: "paulofernandesdocker"
             dockerhub-password: "Bamaq#2027#"
-            command: quickview,compare
+            command: cves
             image: ${{github.event.inputs.imagemdocker}}
             to-latest: true
     
