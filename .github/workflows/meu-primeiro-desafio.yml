@@ -17,6 +17,16 @@ jobs:
 
       - name: Exibibir uma mensagem
         run: echo "Pull da imagem finalizado com sucesso"
+      
+      - name: Docker Scout
+        id: docker-scout
+        uses: docker/scout-action@v1
+        with:
+            command: cves
+            to-latest: true
+            ignore-base: true
+            ignore-unchanged: true
+            only-fixed: true      
 
 
 
