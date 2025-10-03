@@ -22,7 +22,7 @@ jobs:
         uses: docker/scout-action@v1
         with:
             name: Analise de vulnerabilidade
-            dockerhub-user: "paulo_fernandes@outlook.com"
+            dockerhub-user: "paulofernandesdocker"
             dockerhub-password: "Bamaq#2027#"
             command: quickview,compare
             image: ${{github.event.inputs.imagemdocker}}
