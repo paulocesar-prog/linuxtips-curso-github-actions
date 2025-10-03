@@ -15,8 +15,8 @@ jobs:
       - name: Input image:tag
         run: docker pull ${{github.event.inputs.imagemdocker}}
 
-      - name: Exibibir uma mensagem
-        run: echo "Pull da imagem finalizado com sucesso"
+      - name: exibir imagem do docker 
+        run: docker image ls
       
       - name: Docker Scout
         uses: docker/scout-action@v1
