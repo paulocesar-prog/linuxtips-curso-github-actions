@@ -1,0 +1,23 @@
+name: Meu Primeiro Desafio
+
+on:
+  workflow_dispatch:
+    inputs:
+      imagemdocker:
+        description: Escolha uma imagem do docker para pull
+        required: true
+        type: string
+
+jobs:
+  dockerpull:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Input image:tag
+        run: docker pull ${{github.event.inputs.imagemdocker}}
+
+      - name: Exibibir uma mensagem
+        run: echo "Pull da imagem finalizado com sucesso"
+
+
+
+  
