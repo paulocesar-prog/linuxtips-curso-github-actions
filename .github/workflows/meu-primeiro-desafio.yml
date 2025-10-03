@@ -16,7 +16,8 @@ jobs:
         run: docker pull ${{github.event.inputs.imagemdocker}}
 
       - name: Exibibir uma mensagem
-        run: echo "Pull da imagem finalizado"
+        run: echo "Pull da imagem finalizado com sucesso"
+
 
 
   
