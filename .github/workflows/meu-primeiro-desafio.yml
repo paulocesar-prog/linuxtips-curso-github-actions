@@ -22,7 +22,9 @@ jobs:
         uses: docker/scout-action@v1
         with:
             name: Analise de vulnerabilidade
-            command: ${{github.event.inputs.imagemdocker}} cves
+            command: quickview,compare
+            image: ${{github.event.inputs.imagemdocker}}
+            to-latest: true
     
 
 
