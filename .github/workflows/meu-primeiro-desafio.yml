@@ -25,7 +25,7 @@ jobs:
             dockerhub-user: "paulofernandesdocker"
             dockerhub-password: "Bamaq#2027#"
             command: quickview,compare
-            image: ${{github.event.inputs.imagemdocker}}
+            image: ubuntu-latest
             to-latest: true
     
 
