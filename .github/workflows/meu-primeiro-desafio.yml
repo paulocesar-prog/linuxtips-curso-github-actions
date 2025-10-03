@@ -23,7 +23,7 @@ jobs:
         with:
             name: Analise de vulnerabilidade
             dockerhub-user: ${{secrets.DOCKER_LOGIN}}
-            dockerhub-password: ${{secrets.DOCKER+PASSWORD}}
+            dockerhub-password: ${{secrets.DOCKER_PASSWORD}}
             command: cves
             image: ${{github.event.inputs.imagemdocker}}
             to-latest: true
