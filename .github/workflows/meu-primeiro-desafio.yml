@@ -22,8 +22,8 @@ jobs:
         uses: docker/scout-action@v1
         with:
             name: Analise de vulnerabilidade
-            dockerhub-user: "paulofernandesdocker"
-            dockerhub-password: "Bamaq#2027#"
+            dockerhub-user: ${{secrets.DOCKER_LOGIN}}
+            dockerhub-password: ${{secrets.DOCKER+PASSWORD}}
             command: cves
             image: ${{github.event.inputs.imagemdocker}}
             to-latest: true
