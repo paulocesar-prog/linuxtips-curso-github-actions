@@ -15,11 +15,16 @@ jobs:
       - name: Input image:tag
         run: docker pull ${{github.event.inputs.imagemdocker}}
 
-      - name: Exibibir a imagem do pull
+      - name: exibir imagem do docker 
         run: docker image ls
-
-
-
-  
-
-
+      
+      - name: Docker Scout
+        uses: docker/scout-action@v1
+        with:
+            name: Analise de vulnerabilidade
+            dockerhub-user: ${{secrets.DOCKER_LOGIN}}
+            dockerhub-password: ${{secrets.DOCKER_PASSWORD}}
+            command: cves
+            image: ${{github.event.inputs.imagemdocker}}
+            to-latest: true
+    
