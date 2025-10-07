@@ -28,7 +28,3 @@ jobs:
             image: ${{github.event.inputs.imagemdocker}}
             to-latest: true
     
-
-
-
-  
