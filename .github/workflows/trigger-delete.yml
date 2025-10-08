@@ -1,0 +1,15 @@
+name: Testando a regra de delete branch
+
+on:
+  delete
+
+jobs:
+  print-branch-or-tag-delete:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Avisa sobre a deleção da branch ou tag
+        run: echo "Uma nova branch ou tag foi deletada no repositorio."
+
+
+
