@@ -1,10 +1,7 @@
 name: Workflow Manual
 on:
-  workflow_dispatch:   # disparo manual pelo dev
+  workflow_dispatch:
 
 jobs:
   call-build-test:
-    uses: paulocesar-prog/linuxtips-curso-github-actions/.github/workflows/workflow2.yml@main
-
-
-  
+    uses: ./.github/workflows/workflow2.yml
