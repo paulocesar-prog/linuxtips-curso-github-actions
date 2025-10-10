@@ -1,0 +1,8 @@
+{
+  "name": "minha-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Build realizado com sucesso!'",
+    "test": "node test/index.test.js"
+  }
+}
