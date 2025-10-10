@@ -1,6 +1,6 @@
 name: Build e Testes
 on:
-  workflow_call:       # workflow reutilizável
+  workflow_call:
 
 jobs:
   build-and-test:
@@ -9,8 +9,11 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v3
 
+      - name: Instalar dependências
+        run: yarn install
+
       - name: Build
-        run: echo "Build realizado com sucesso!"
+        run: yarn build
 
       - name: Testes
         run: |
