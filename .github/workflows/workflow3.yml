@@ -1,7 +1,7 @@
 name: Publicação Condicional
 on:
   workflow_run:
-    workflows: [Build e Testes]   # nome do workflow que dispara este
+    workflows: [Workflow Manual]   # nome do workflow que dispara este
     types:
       - completed
 
