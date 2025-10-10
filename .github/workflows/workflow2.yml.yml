@@ -1,6 +1,6 @@
 name: Build e Testes
 on:
-  workflow_call:
+  workflow_call:       # workflow reutilizável
 
 jobs:
   build-and-test:
@@ -8,7 +8,11 @@ jobs:
     steps:
       - name: Checkout do código
         uses: actions/checkout@v3
+
       - name: Build
         run: echo "Build realizado com sucesso!"
+
       - name: Testes
-        run: echo "Testes executados" && exit 0   # exit 0 = sucesso
+        run: |
+          echo "Executando testes..."
+          node test/index.test.js   # exit 0 = sucesso, exit 1 = falha
