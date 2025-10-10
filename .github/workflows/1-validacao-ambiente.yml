@@ -9,3 +9,9 @@ on:
         type: choice
         options:
           - sim
+jobs:
+  iniciar-build-e-testes:
+    runs-on: ubuntu-latest
+    steps:
+        - run: echo "Inicio dos testes iniciados"
+  
