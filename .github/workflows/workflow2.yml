@@ -1,4 +1,4 @@
-name: Build e Testes
+name: buildandtestes
 on:
   workflow_call:
 
