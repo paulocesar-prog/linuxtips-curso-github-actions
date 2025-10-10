@@ -1,18 +1,12 @@
-name: Iniciando a validação do Ambiente
-
-on: 
+name: Workflow Manual
+on:
   workflow_dispatch:
-    inputs:
-      iniciar a validacao de Ambiente:
-        default: "Sim"
-        required: true
-        type: choice
-        options:
-          - sim
+
 jobs:
-  iniciar-build-e-testes:
+  start:
     runs-on: ubuntu-latest
     steps:
-        - name: Chamar o Workflow de Build e Testes 
-          uses: ./.github/workflows/2-build-e-testes.yml
+      - name: Chamar workflow de Build e Testes
+        uses: ./.github/workflows/2-build-e-testes.yml  # workflow reutilizável
+
   
