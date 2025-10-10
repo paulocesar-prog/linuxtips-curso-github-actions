@@ -13,5 +13,6 @@ jobs:
   iniciar-build-e-testes:
     runs-on: ubuntu-latest
     steps:
-        - run: echo "Inicio dos testes iniciados"
+        - name: Chamar o Workflow de Build e Testes 
+          uses: ./.github/workflows/2-build-e-testes.yml
   

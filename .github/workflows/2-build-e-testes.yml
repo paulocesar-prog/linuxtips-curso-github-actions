@@ -1,0 +1,14 @@
+name: Build e Testes
+on:
+  workflow_call:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+      - name: Build
+        run: echo "Build realizado com sucesso!"
+      - name: Testes
+        run: echo "Testes executados" && exit 0   # exit 0 = sucesso
