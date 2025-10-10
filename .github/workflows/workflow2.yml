@@ -15,4 +15,5 @@ jobs:
       - name: Testes
         run: |
           echo "Executando testes..."
+          cd minha-app
           node test/index.test.js   # exit 0 = sucesso, exit 1 = falha
