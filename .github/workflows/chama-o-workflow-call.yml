@@ -9,7 +9,7 @@ on:
 
 jobs:
   chama-workflow:
-    uses: ./.github/workflows/chama-o-workflow-call.yml
+    uses: ./.github/worflows/trigger-workflow-call.yml
     with:
       nome-do-curso-recebido: ${{inputs.nome-do-curso-enviado}}
 
