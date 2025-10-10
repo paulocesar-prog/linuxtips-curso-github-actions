@@ -3,10 +3,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  start:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Chamar workflow de Build e Testes
-        uses: ./.github/workflows/2-build-e-testes.yml  # workflow reutilizável
+  call-build-test:
+    uses: owner/repo/.github/workflows/2-build-e-testes.yml@main
 
   
