@@ -1,4 +1,4 @@
-name: Workflow Compartilhado
+name: Chama Workflow Compartilhado
 
 on:
   workflow_dispatch:
