@@ -1,0 +1,11 @@
+name: Iniciando a validação do Ambiente
+
+on: 
+  workflow_dispatch:
+    inputs:
+      iniciar a validacao de Ambiente:
+        default: "Sim"
+        required: true
+        type: choice
+        options:
+          - sim
