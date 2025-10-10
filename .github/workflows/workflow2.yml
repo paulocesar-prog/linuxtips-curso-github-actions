@@ -1,22 +1,14 @@
-name: Build e Testes
+name: Workflow Run
+
 on:
-  workflow_call:
+  workflow_run:
+    workflows: [Chama Workflow Compartilhado]
+    types:
+      - completed
 
 jobs:
-  build-and-test:
+  avisa-sobre-termino-do-workflow:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout do código
-        uses: actions/checkout@v3
-
-      - name: Instalar dependências
-        run: yarn install
-
-      - name: Build
-        run: yarn build
-
-      - name: Testes
-        run: |
-          echo "Executando testes..."
-          cd minha-app
-          node test/index.test.js   # exit 0 = sucesso, exit 1 = falha
+      - name: Informa o nome do curso
+        run: echo "O Workflow Compartilhado 'Chama Workflow Compartilhado' terminou de ser executado"
