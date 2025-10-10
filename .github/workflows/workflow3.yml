@@ -6,9 +6,8 @@ on:
       - completed
 
 jobs:
-  publish:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}  # só roda se o workflow anterior teve sucesso
+  fala-o-nome-do-curso:
     runs-on: ubuntu-latest
     steps:
-      - name: Publicar aplicação
-        run: echo "Publicação realizada!"
+      - name: Informa o nome do curso
+        run: echo "O nome do seu curso é Teste"
