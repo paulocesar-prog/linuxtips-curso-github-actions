@@ -3,14 +3,14 @@ name: Chama Workflow Compartilhado
 on:
   workflow_dispatch:
     inputs:
-      nome-do-curso enviado:
+      nome-do-curso-enviado:
         required: true
         type: string
 
 jobs:
   chama-workflow:
-    uses: .github/workflows/trigger-workflow-call.yml
+    uses: ./.github/workflows/chama-o-workflow-call.yml
     with:
-      nome-do-curso-enviado: ${{inputs.nome-do-curso enviado}}
+      nome-do-curso-enviado: ${{inputs.nome-do-curso-enviado}}
 
     
