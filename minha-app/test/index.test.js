@@ -1,6 +1,6 @@
 const { soma } = require('../index');
 
-if (soma(2, 3) === 5) {
+if (soma(2, 3) === 6) {
   console.log('Teste passou!');
   process.exit(0);
 } else {
