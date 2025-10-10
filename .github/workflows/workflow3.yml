@@ -6,8 +6,8 @@ on:
       - completed
 
 jobs:
-  fala-o-nome-do-curso:
+  Teste-Publicacao:
     runs-on: ubuntu-latest
     steps:
       - name: Informa o nome do curso
-        run: echo "O nome do seu curso é Teste"
+        run: echo "Publicação realizada com sucesso"
